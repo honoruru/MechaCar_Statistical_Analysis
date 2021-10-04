@@ -1,0 +1,33 @@
+#DELIVERABLE 1
+
+library(dplyr)
+
+MechaCar_df <- read.csv(file = 'MechaCar_mpg.csv',check.names = F, stringsAsFactors = F)
+
+lm(vehicle_length ~ mpg,MechaCar_df)
+
+summary(lm(vehicle_length ~ mpg,MechaCar_df))
+
+
+# DELIVERABLE 2
+
+MechaCar_tbl <- read.csv(file = 'suspension_coil.csv',check.names = F, stringsAsFactors = F)
+
+summary_table <- MechaCar_tbl %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Var_PSI=var(PSI), Stdev_PSI=sd(PSI), .groups = 'keep') #create summary table
+
+lot_summary <- MechaCar_tbl  %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Var_PSI=var(PSI), Stdev_PSI=sd(PSI), .groups = 'keep') #create lot summary table
+
+
+# DELIVERABLE 3
+
+t.test(lot_summary$Mean_PSI, mu=1500) 
+
+t.test(MechaCar_tbl$PSI, mu=1500) 
+
+Lot_1 <- subset(MechaCar_tbl, Manufacturing_Lot = "Lot1")
+Lot_2 <- subset(MechaCar_tbl, Manufacturing_Lot = "Lot2")
+Lot_3 <- subset(MechaCar_tbl, Manufacturing_Lot = "Lot3")
+
+t.test(Lot_1$PSI, mu=1500)
+t.test(Lot_2$PSI, mu=1500)
+t.test(Lot_2$PSI, mu=1500)

@@ -8,7 +8,7 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar_df)) 
 
 
-
+# check single linear regression
 lm(vehicle_length ~ mpg,MechaCar_df)
 summary(lm(vehicle_length ~ mpg,MechaCar_df))
 
@@ -27,7 +27,7 @@ summary(lm(AWD ~ mpg,MechaCar_df))
 lm(mpg ~ mpg,MechaCar_df)
 summary(lm(mpg ~ mpg,MechaCar_df))
 
-
+# check correlation
 cor(MechaCar_df$vehicle_length, MechaCar_df$mpg)
 cor(MechaCar_df$vehicle_weight, MechaCar_df$mpg)
 cor(MechaCar_df$spoiler_angle, MechaCar_df$mpg)
@@ -50,9 +50,9 @@ t.test(lot_summary$Mean_PSI, mu=1500)
 
 t.test(MechaCar_tbl$PSI, mu=1500) 
 
-Lot_1 <- subset(MechaCar_tbl, Manufacturing_Lot = "Lot1")
-Lot_2 <- subset(MechaCar_tbl, Manufacturing_Lot = "Lot2")
-Lot_3 <- subset(MechaCar_tbl, Manufacturing_Lot = "Lot3")
+Lot_1 <- subset(MechaCar_tbl, Manufacturing_Lot == "Lot1")
+Lot_2 <- subset(MechaCar_tbl, Manufacturing_Lot == "Lot2")
+Lot_3 <- subset(MechaCar_tbl, Manufacturing_Lot == "Lot3")
 
 t.test(Lot_1$PSI, mu=1500)
 t.test(Lot_2$PSI, mu=1500)

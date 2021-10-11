@@ -16,13 +16,13 @@ With a p-value of 0.0000000000535, we reject the null hypothesis, therefore the 
 The summarize() function was were applied to suspension coil data that was categorized into three lots in order to determine if they meet design specifications.  The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Taking data from all lots combined, PSI variance appears to be within specifications. 
 
 <p align="center">
- <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture2.png" width="600" height="350" />
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture2.png" width="600" height="250" />
 </p>
 
 However, breaking data into lots, Lot 3's variance is 170PSI.
 
 <p align="center">
- <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture3.png" width="600" height="350" />
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture3.png" width="800" height="350" />
 </p>
 
 According to MechaCar data, all lots do not meet specifications.
@@ -33,7 +33,7 @@ T-tests were applied to were applied to suspension coil data that was categorize
 When assessing all lots combined, t-test results indicate that the mean is statistically similar to 1,500 as one would expect. 
 
 <p align="center">
- <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture4.png" width="600" height="350" />
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture4.png" width="600" height="650" />
 </p>
 
 Whether t-testing the lot_summary table or MechaCar_tbl, both p-values are greater than 0.05%, thus one cannot reject the null hypothesis and mean is believed to be statistically similar to 1,500 PSI.
@@ -41,7 +41,7 @@ Whether t-testing the lot_summary table or MechaCar_tbl, both p-values are great
 When t-testing each lot separately, we see that Lot 3’s p-value is less than 0.05% leading us to reject the null hypothesis and concluding the alternate hypothesis that the mean is not equal to 1,500.
 
 <p align="center">
- <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture5.png" width="600" height="350" />
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture5.png" width="600" height="850" />
 </p>
 
 ## Study Design: MechaCar vs Competition 

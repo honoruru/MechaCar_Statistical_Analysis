@@ -4,7 +4,9 @@
 
 Linear Regression was applied to vehicle_length, vehicle_weight, spoiler_angle, ground_clearance, and AWD variables to determine their relationship to the variable mpg.  According to the results, vehicle_length and ground_clearance are statistically unlikely to provide random amounts of variance to the linear model.  
 
-picture1
+<p align="center">
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture1.png" width="600" height="350" />
+</p>
  
 With a p-value of 0.0000000000535, we reject the null hypothesis, therefore the slope of the regression is considered not to be zero.  
 71% of the variability of mpg is explained by the model while the p-value remained significant.  The model could be said to effectively predict mpg of MechaCar prototypes.
@@ -13,12 +15,16 @@ With a p-value of 0.0000000000535, we reject the null hypothesis, therefore the 
 
 The summarize() function was were applied to suspension coil data that was categorized into three lots in order to determine if they meet design specifications.  The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Taking data from all lots combined, PSI variance appears to be within specifications. 
 
-picture2
- 
+<p align="center">
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture2.png" width="600" height="350" />
+</p>
+
 However, breaking data into lots, Lot 3's variance is 170PSI.
 
-picture3
- 
+<p align="center">
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture3.png" width="600" height="350" />
+</p>
+
 According to MechaCar data, all lots do not meet specifications.
 
 ## T-Tests on Suspension Coils
@@ -26,14 +32,18 @@ T-tests were applied to were applied to suspension coil data that was categorize
 
 When assessing all lots combined, t-test results indicate that the mean is statistically similar to 1,500 as one would expect. 
 
-picture4
- 
+<p align="center">
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture4.png" width="600" height="350" />
+</p>
+
 Whether t-testing the lot_summary table or MechaCar_tbl, both p-values are greater than 0.05%, thus one cannot reject the null hypothesis and mean is believed to be statistically similar to 1,500 PSI.
 
 When t-testing each lot separately, we see that Lot 3’s p-value is less than 0.05% leading us to reject the null hypothesis and concluding the alternate hypothesis that the mean is not equal to 1,500.
 
-picture5 
- 
+<p align="center">
+ <img src="https://github.com/honoruru/MechaCar_Statistical_Analysis/blob/main/challenge_images/Picture5.png" width="600" height="350" />
+</p>
+
 ## Study Design: MechaCar vs Competition 
 We have been requested to design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.  In order to assess how the MechaCar performs against the competition we would identify metrics that were relevant to comparisons made by potential purchasers of cars.  We have selected ratings of customer satisfaction from a large survey as a candidate to evaluate for measurements of performance.  We presume that customer satisfaction represents an indication of how the MechaCar is performing in the market.  
 
